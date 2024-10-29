@@ -1,1 +1,1 @@
-This is a Project by the Odin Course.
+This is a Project by the Odin Foundations Course.
