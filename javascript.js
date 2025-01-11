@@ -83,10 +83,14 @@ const computerSelection = getComputerChoice();
 
 function playGame () {
         playRound(humanSelection, computerSelection);
+        playRound(humanSelection, computerSelection);
+        playRound(humanSelection, computerSelection);
+        playRound(humanSelection, computerSelection);
+        playRound(humanSelection, computerSelection);
            
     }
 
 
 playGame();
-playGame();
+
 
