@@ -89,7 +89,18 @@ function playGame () {
       playRound();
       playRound();
       playRound();
-                      
+         
+        // Result Message
+
+      if (humanScore > computerScore) {
+        alert("You won the Game!");
+      } else if (computerScore > humanScore) {
+        alert("Computer won the Game!");
+      } else if (computerScore == humanScore) {
+        alert("Tie!");
+      }
+
+
 } 
 
 // calling playGame Function
