@@ -97,7 +97,3 @@ function playGame () {
 playGame();
 
 
-
-const cars = ["bmw", "vw", "volvo"];
-let newcars = cars.push("Porsche");
-console.log(typeof cars);
