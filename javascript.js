@@ -1,17 +1,16 @@
 // Global Variables
 
-let random = Math.random();
+
 let rock = "rock";
 let paper = "paper";
 let scissors = "scissors";
 
-let humanScore = 0;
-let computerScore = 0;
+
 
 // Computer Rng Choice Function
 
 function getComputerChoice () {
-
+    let random = Math.random();
     if (random <= 0.33) {
         console.log('Computer gets Rock');
         return rock;
@@ -30,7 +29,7 @@ function getComputerChoice () {
     
     let sign = prompt("Type 'Rock' 'Paper' or 'Scissors'").toLowerCase();
     
-    if (sign == "rock") {
+    if (sign == rock) {
         console.log("You choose Rock");
         return sign;
     } else if (sign == paper) {
@@ -43,16 +42,28 @@ function getComputerChoice () {
     
  }
 
-// Round Function
+// Choice Functions to Const Variables
 
-function playRound(computerChoice, humanChoice) {
-        if (humanSelection == rock && computerSelection == paper) {
+// 5 Rounds Function playGame
+
+function playGame () {
+    
+    let humanScore = 0;
+    let computerScore = 0;
+
+    function playRound() {
+   
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+
+         if (humanSelection == rock && computerSelection == paper) {
             console.log("You win!");
             humanScore++;
-
+           
         } else if (humanSelection == rock && computerSelection == scissors) {
             console.log("You win!");
-            humanscore++;
+            humanScore++;
+           
         } else if (humanSelection == computerSelection) {
             console.log("Tie!");
         } else if (humanSelection == paper && computerSelection == rock) {
@@ -63,34 +74,30 @@ function playRound(computerChoice, humanChoice) {
             computerScore++;
         } else if (humanSelection == scissors && computerSelection == rock) {
             console.log("You lose!");
-            humanScore++;
+            computerScore++;
         } else if (humanSelection == scissors && computerSelection == paper) {
             console.log("You win!");
             computerScore++;
-        }
-            console.log("You have " + humanScore + " Points and the Computer has " + computerScore + " Points")
-            return;
-           
             
-}
+        }   console.log("You have " + humanScore + " Points and the Computer has " + computerScore + " Points");
+            return;
+                    
+            // Calling Round 5 times
+    
+    } playRound();
+      playRound();
+      playRound();
+      playRound();
+      playRound();
+                      
+} 
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-
-
-// 5 Rounds Function playGame
-
-function playGame () {
-        playRound(humanSelection, computerSelection);
-        playRound(humanSelection, computerSelection);
-        playRound(humanSelection, computerSelection);
-        playRound(humanSelection, computerSelection);
-        playRound(humanSelection, computerSelection);
-           
-    }
-
+// calling playGame Function
 
 playGame();
 
 
+
+const cars = ["bmw", "vw", "volvo"];
+let newcars = cars.push("Porsche");
+console.log(typeof cars);
