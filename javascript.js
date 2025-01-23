@@ -1,11 +1,8 @@
 // Global Variables
 
-
 let rock = "rock";
 let paper = "paper";
 let scissors = "scissors";
-
-
 
 // Computer Rng Choice Function
 
@@ -41,7 +38,6 @@ function getComputerChoice () {
     }
     
  }
-
 
 
 // Function playGame
@@ -99,7 +95,6 @@ function playGame () {
       } else if (computerScore == humanScore) {
         alert("Tie!");
       }
-
 
 } 
 
