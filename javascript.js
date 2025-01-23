@@ -42,9 +42,9 @@ function getComputerChoice () {
     
  }
 
-// Choice Functions to Const Variables
 
-// 5 Rounds Function playGame
+
+// Function playGame
 
 function playGame () {
     
